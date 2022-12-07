@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Automize", "E-Automize.csproj", "{AE51E86A-A095-48C0-93C5-66B7AEB8B7E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Automize", "E-Automize.csproj", "{BEB8D899-10D8-48EE-B4B9-23537F13FE5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE51E86A-A095-48C0-93C5-66B7AEB8B7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE51E86A-A095-48C0-93C5-66B7AEB8B7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE51E86A-A095-48C0-93C5-66B7AEB8B7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE51E86A-A095-48C0-93C5-66B7AEB8B7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB8D899-10D8-48EE-B4B9-23537F13FE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB8D899-10D8-48EE-B4B9-23537F13FE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB8D899-10D8-48EE-B4B9-23537F13FE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB8D899-10D8-48EE-B4B9-23537F13FE5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0352612F-7B18-4C87-BF5F-E44408D998B5}
+		SolutionGuid = {F4AEF54F-9AE7-4ACA-99BA-EBF5A2C7A05D}
 	EndGlobalSection
 EndGlobal

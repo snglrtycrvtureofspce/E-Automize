@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,62 +19,32 @@ namespace E_Automize
             InitializeComponent();
         }
 
-        public string usernames;
-        private Authentication auth;
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            Register reg = new Register();
-            reg.ShowDialog();
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text != string.Empty
-                && txtPassword.Text != string.Empty)
+            if (user.Text.Trim() == "" && pass.Text.Trim() == "")
             {
-                checkAccount(txtUsername.Text, txtPassword.Text);
+                MessageBox.Show("Empty Fields", "Error");
             }
-        }
-
-        private void checkAccount(string username, string password)
-        {
-            auth = new Authentication();
-            auth.getConnection();
-
-            try
+            else
             {
-                using (SQLiteConnection con = new SQLiteConnection(auth.connectionString, true))
+                string query = "SELECT * FROM people WHERE username= @user AND password = @pass";
+                SQLiteConnection con = new SQLiteConnection("Data Source=users.db;Version=3;");
+                con.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                cmd.Parameters.AddWithValue("@user", user.Text);
+                cmd.Parameters.AddWithValue("@pass", user.Text);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                
+                if (dt.Rows.Count > 0)
                 {
-                    con.Open();
-                    SQLiteCommand cmd = new SQLiteCommand();
-                    string query = @"SELECT * FROM users WHERE Username='" + username + "' and Password='" + password + "'";
-
-                    int count = 0;
-                    cmd.CommandText = query;
-                    cmd.Connection = con;
-
-                    SQLiteDataReader read = cmd.ExecuteReader();
-                    while (read.Read())
-                    {
-                        count++;
-                    }
-
-                    if (count == 1)
-                    {
-                        MessageBox.Show("Успешный вход!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        usernames = username;
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Имя пользователя или пароль неверны!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    MessageBox.Show("You are Logged in", "Login Succesfull");
                 }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
+                else
+                {
+                    MessageBox.Show("Login Failed", "Error");
+                }
             }
         }
     }
