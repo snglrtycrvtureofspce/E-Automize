@@ -546,7 +546,7 @@
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(93, 20);
             this.UserName.TabIndex = 11;
-            this.UserName.Text = "Name";
+            this.UserName.Text = "Имя";
             this.UserName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UserName.UseMnemonic = false;
             this.UserName.Visible = false;
