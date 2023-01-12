@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI.WinForms.GunaAdvenceButton btnAddProduct;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProduct));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
@@ -44,12 +45,12 @@
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.PictureBox = new Guna.UI.WinForms.GunaPictureBox();
             this.btnCancel = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnAddBook = new Guna.UI.WinForms.GunaAdvenceButton();
             this.TextBoxDescription = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.btnBrowse = new Guna.UI.WinForms.GunaAdvenceButton();
             this.TextBoxPrice = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
+            btnAddProduct = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
@@ -257,37 +258,37 @@
             this.btnCancel.Text = "  Закрыть";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnAddBook
+            // btnAddProduct
             // 
-            this.btnAddBook.AnimationHoverSpeed = 0.07F;
-            this.btnAddBook.AnimationSpeed = 0.03F;
-            this.btnAddBook.BaseColor = System.Drawing.Color.DimGray;
-            this.btnAddBook.BorderColor = System.Drawing.Color.Black;
-            this.btnAddBook.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnAddBook.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnAddBook.CheckedForeColor = System.Drawing.Color.White;
-            this.btnAddBook.CheckedImage = null;
-            this.btnAddBook.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnAddBook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddBook.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddBook.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAddBook.Font = new System.Drawing.Font("Sitka Text", 12F);
-            this.btnAddBook.ForeColor = System.Drawing.Color.White;
-            this.btnAddBook.Image = null;
-            this.btnAddBook.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBook.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddBook.Location = new System.Drawing.Point(315, 393);
-            this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.OnHoverBaseColor = System.Drawing.Color.Gray;
-            this.btnAddBook.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAddBook.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAddBook.OnHoverImage = null;
-            this.btnAddBook.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddBook.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAddBook.Size = new System.Drawing.Size(107, 31);
-            this.btnAddBook.TabIndex = 29;
-            this.btnAddBook.Text = " Добавить";
-            this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
+            btnAddProduct.AnimationHoverSpeed = 0.07F;
+            btnAddProduct.AnimationSpeed = 0.03F;
+            btnAddProduct.BaseColor = System.Drawing.Color.DimGray;
+            btnAddProduct.BorderColor = System.Drawing.Color.Black;
+            btnAddProduct.CheckedBaseColor = System.Drawing.Color.Gray;
+            btnAddProduct.CheckedBorderColor = System.Drawing.Color.Black;
+            btnAddProduct.CheckedForeColor = System.Drawing.Color.White;
+            btnAddProduct.CheckedImage = null;
+            btnAddProduct.CheckedLineColor = System.Drawing.Color.DimGray;
+            btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnAddProduct.DialogResult = System.Windows.Forms.DialogResult.None;
+            btnAddProduct.FocusedColor = System.Drawing.Color.Empty;
+            btnAddProduct.Font = new System.Drawing.Font("Sitka Text", 12F);
+            btnAddProduct.ForeColor = System.Drawing.Color.White;
+            btnAddProduct.Image = null;
+            btnAddProduct.ImageSize = new System.Drawing.Size(20, 20);
+            btnAddProduct.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            btnAddProduct.Location = new System.Drawing.Point(315, 393);
+            btnAddProduct.Name = "btnAddProduct";
+            btnAddProduct.OnHoverBaseColor = System.Drawing.Color.Gray;
+            btnAddProduct.OnHoverBorderColor = System.Drawing.Color.Black;
+            btnAddProduct.OnHoverForeColor = System.Drawing.Color.White;
+            btnAddProduct.OnHoverImage = null;
+            btnAddProduct.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            btnAddProduct.OnPressedColor = System.Drawing.Color.Black;
+            btnAddProduct.Size = new System.Drawing.Size(107, 31);
+            btnAddProduct.TabIndex = 29;
+            btnAddProduct.Text = " Добавить";
+            btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // TextBoxDescription
             // 
@@ -390,7 +391,7 @@
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAddBook);
+            this.Controls.Add(btnAddProduct);
             this.Controls.Add(this.TextBoxDescription);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.btnBrowse);
@@ -421,7 +422,6 @@
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaPictureBox PictureBox;
         public Guna.UI.WinForms.GunaAdvenceButton btnCancel;
-        public Guna.UI.WinForms.GunaAdvenceButton btnAddBook;
         private Guna.UI.WinForms.GunaTextBox TextBoxDescription;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaAdvenceButton btnBrowse;

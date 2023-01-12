@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SIGNin));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.ErrorPanel = new System.Windows.Forms.Panel();
-            this.Messenge = new System.Windows.Forms.Label();
+            this.Message = new System.Windows.Forms.Label();
             this.gunaPictureBox = new Guna.UI.WinForms.GunaPictureBox();
             this.btnClose = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSignIN = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -50,7 +50,7 @@
             // 
             // ErrorPanel
             // 
-            this.ErrorPanel.Controls.Add(this.Messenge);
+            this.ErrorPanel.Controls.Add(this.Message);
             this.ErrorPanel.Controls.Add(this.gunaPictureBox);
             this.ErrorPanel.Location = new System.Drawing.Point(16, 143);
             this.ErrorPanel.Name = "ErrorPanel";
@@ -60,14 +60,14 @@
             // 
             // Messenge
             // 
-            this.Messenge.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Messenge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Messenge.Location = new System.Drawing.Point(19, 0);
-            this.Messenge.Name = "Messenge";
-            this.Messenge.Size = new System.Drawing.Size(194, 19);
-            this.Messenge.TabIndex = 1;
-            this.Messenge.Text = "Messeng";
-            this.Messenge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Message.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Message.Location = new System.Drawing.Point(19, 0);
+            this.Message.Name = "Messenge";
+            this.Message.Size = new System.Drawing.Size(194, 19);
+            this.Message.TabIndex = 1;
+            this.Message.Text = "Message";
+            this.Message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // gunaPictureBox
             // 
@@ -231,7 +231,7 @@
 
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private System.Windows.Forms.Panel ErrorPanel;
-        private System.Windows.Forms.Label Messenge;
+        private System.Windows.Forms.Label Message;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox;
         private Guna.UI.WinForms.GunaAdvenceButton btnClose;
         private Guna.UI.WinForms.GunaAdvenceButton btnSignIN;

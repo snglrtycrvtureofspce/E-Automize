@@ -77,8 +77,8 @@ namespace EAutomize
                     if (dt.Rows.Count != 1)
                     {
                         ErrorPanel.Visible = true;
-                        Messenge.ForeColor = Color.Red;
-                        Messenge.Text = "Пользователь не найден!";
+                        Message.ForeColor = Color.Red;
+                        Message.Text = "Пользователь не найден!";
                     }
                     else
                     {
@@ -97,8 +97,8 @@ namespace EAutomize
                     if (TextBoxUser.Text == "Имя пользователя")
                         TextBoxUser.BorderColor = Color.Red;
                     ErrorPanel.Visible = true;
-                    Messenge.ForeColor = Color.Red;
-                    Messenge.Text = "Есть пустые поля!";
+                    Message.ForeColor = Color.Red;
+                    Message.Text = "Есть пустые поля!";
                 }
             }
             catch (Exception ex)

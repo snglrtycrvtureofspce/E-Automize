@@ -14,13 +14,19 @@ namespace EAutomize.Form
 
         private void timer1_Tick(object sender, EventArgs e) // генерация ленты
         {
+            Random rnd = new Random();
             Progress.Value += 2;
-            if(Progress.Value == 100)
+            if (Progress.Value == 100)
             {
                 timer1.Stop();
                 this.Hide();
                 Home home = new Home();
                 home.Show();
+            }
+            else if (Progress.Value == rnd.Next(30, 100))
+            {
+                System.Threading.Thread.Sleep(2000);
+                Progress.Value += 50;
             }
         }
 

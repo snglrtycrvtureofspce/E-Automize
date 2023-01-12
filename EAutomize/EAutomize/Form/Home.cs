@@ -74,7 +74,6 @@ namespace EAutomize.Form
         //-------------------------------- Admin
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-           // SearchPanel.Location = new Point(26, 11);
             _obj = this;
 
             if (InfoPanel.Controls.Count > 0)
@@ -325,7 +324,7 @@ namespace EAutomize.Form
             UserControl1 userControl1 = new UserControl1();
             InfoPanel.Controls.Add(userControl1);
 
-            if (UserName.Text != "Name")
+            if (UserName.Text != "Имя")
             {
                 userControl1.PanelLogReg.Visible = false;
                 userControl1.Size = new Size(134, 45);

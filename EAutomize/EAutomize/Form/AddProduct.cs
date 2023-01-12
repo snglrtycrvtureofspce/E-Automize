@@ -34,7 +34,7 @@ namespace EAutomize.Form
             }
         }
 
-        private void btnAddBook_Click(object sender, EventArgs e)
+        private void btnAddProduct_Click(object sender, EventArgs e)
         {
             try
             {
