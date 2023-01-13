@@ -1,4 +1,4 @@
-# [EN](#Project-work-on-the-subject-"Software Development Technology",-in-the-C#-programming-language-using-Windows-Forms-GUI-and-SQLite3-plug-in-database)/[RU](#Проектная работа по предмету "ТРПО", на языке программирования C# с использованием графического интерфейса Windows Forms и подключаемой базой данных SQLite 3)
+# [EN](#Project-work-on-the-subject-"Software Development Technology",-in-the-C#-programming-language-using-Windows-Forms-GUI-and-SQLite3-plug-in-database)/[RU](#Проектная-работа-по-предмету-"ТРПО",-на-языке-программирования-C#-с-использованием-графического-интерфейса-Windows Forms-и-подключаемой базой-данных-SQLite3)
 # Project work on the subject "Software Development Technology", in the C # programming language using Windows Forms GUI and SQLite3-plug-in database
 Project work topic - "App for selling goods in the 'Electronics' category"
 
