@@ -183,4 +183,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Авторы
 
-* **Aleksandr Zenevich** - *вся работа* - [snglrtycrvtureofspce](https://github.com/snglrtycrvtureofspce)
+***Aleksandr Zenevich** - *вся работа* - [snglrtycrvtureofspce](https://github.com/snglrtycrvtureofspce)
