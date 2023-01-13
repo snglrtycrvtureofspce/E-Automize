@@ -201,9 +201,9 @@
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel5.Location = new System.Drawing.Point(3, 115);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(147, 15);
+            this.gunaLabel5.Size = new System.Drawing.Size(75, 15);
             this.gunaLabel5.TabIndex = 6;
-            this.gunaLabel5.Text = "Возрастные ограничения";
+            this.gunaLabel5.Text = "Дата выхода";
             // 
             // TextBoxBrand
             // 

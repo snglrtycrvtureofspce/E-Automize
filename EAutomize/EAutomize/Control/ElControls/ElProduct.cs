@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.OleDb;
 using System.Data.SQLite;
 using System.Windows.Forms;
 using EAutomize.Form;
@@ -33,11 +32,11 @@ namespace EAutomize.Control.ElControls
                     //информация
                     infoproductControl.gunaLabel1.Text = reader[1].ToString(); // название товара
                     infoproductControl.gunaLabel2.Text = reader[2].ToString(); // категория
-                    infoproductControl.gunaLabel3.Text += reader[3].ToString(); // бренд
-                    infoproductControl.gunaLabel5.Text += reader[0].ToString(); // №
-                    infoproductControl.gunaLabel6.Text += reader[5].ToString(); // дата выхода
+                    infoproductControl.gunaLabel3.Text = reader[3].ToString(); // бренд
+                    infoproductControl.gunaLabel5.Text = reader[0].ToString(); // №
+                    infoproductControl.gunaLabel6.Text = reader[4].ToString(); // дата выхода
                     infoproductControl.gunaLabel7.Text = reader[7].ToString(); // описание товара
-                    infoproductControl.gunaLabel12.Text = reader[5].ToString() + " руб."; // цена
+                    infoproductControl.gunaLabel12.Text = reader[5] + " руб."; // цена
                 }
                 
                 infoproductControl.Dock = DockStyle.Fill;
