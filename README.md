@@ -1,6 +1,6 @@
 # [EN](#project-work-on-the-subject-software-development-technology-in-the-c--programming-language-using-windows-forms-gui-and-sqlite3-plug-in-database)/[RU](#проектная-работа-по-предмету-трпо-на-языке-программирования-c-с-использованием-графического-интерфейса-windows-forms-и-подключаемой-базой-данных-sqlite3)
 
-# Project work on the subject "Software Development Technology", in the C # programming language using Windows Forms GUI and SQLite3-plug-in database
+# Project work on the subject "Software Development Technology", in the C# programming language using Windows Forms GUI and SQLite3-plug-in database
 Project work topic - "App for selling goods in the 'Electronics' category"
 
 ## Project code structure
