@@ -1,5 +1,5 @@
-# [EN](#Project work on the subject "Software Development Technology", in the C # programming language using Windows Forms GUI and SQLite 3 plug-in database)/[RU](#Проектная работа по предмету "ТРПО", на языке программирования C# с использованием графического интерфейса Windows Forms и подключаемой базой данных SQLite 3)
-# Project work on the subject "Software Development Technology", in the C # programming language using Windows Forms GUI and SQLite 3 plug-in database
+# [EN](#Project-work-on-the-subject-"Software Development Technology",-in-the-C#-programming-language-using-Windows-Forms-GUI-and-SQLite3-plug-in-database)/[RU](#Проектная работа по предмету "ТРПО", на языке программирования C# с использованием графического интерфейса Windows Forms и подключаемой базой данных SQLite 3)
+# Project work on the subject "Software Development Technology", in the C # programming language using Windows Forms GUI and SQLite3-plug-in database
 Project work topic - "App for selling goods in the 'Electronics' category"
 
 ## Project code structure
@@ -91,7 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## The authors
 
 * **Aleksandr Zenevich** - *all work* - [snglrtycrvtureofspce](https://github.com/snglrtycrvtureofspce)
-# Проектная работа по предмету "ТРПО", на языке программирования C# с использованием графического интерфейса Windows Forms и подключаемой базой данных SQLite 3
+# Проектная работа по предмету "ТРПО", на языке программирования C# с использованием графического интерфейса Windows Forms и подключаемой базой данных SQLite3
 Тема проектной работы - "Приложение для продажи товаров в категории 'Электроника'"
 
 ## Структура кода проекта
