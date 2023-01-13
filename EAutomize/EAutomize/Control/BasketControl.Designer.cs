@@ -319,6 +319,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "BasketControl";
             this.Size = new System.Drawing.Size(746, 500);
+            this.Load += new System.EventHandler(this.BasketControl_Load);
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaPanel2.ResumeLayout(false);
             this.gunaPanel1.ResumeLayout(false);

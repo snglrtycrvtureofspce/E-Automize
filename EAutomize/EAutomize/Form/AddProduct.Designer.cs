@@ -56,6 +56,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnAddProduct
+            // 
+            btnAddProduct.AnimationHoverSpeed = 0.07F;
+            btnAddProduct.AnimationSpeed = 0.03F;
+            btnAddProduct.BaseColor = System.Drawing.Color.DimGray;
+            btnAddProduct.BorderColor = System.Drawing.Color.Black;
+            btnAddProduct.CheckedBaseColor = System.Drawing.Color.Gray;
+            btnAddProduct.CheckedBorderColor = System.Drawing.Color.Black;
+            btnAddProduct.CheckedForeColor = System.Drawing.Color.White;
+            btnAddProduct.CheckedImage = null;
+            btnAddProduct.CheckedLineColor = System.Drawing.Color.DimGray;
+            btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnAddProduct.DialogResult = System.Windows.Forms.DialogResult.None;
+            btnAddProduct.FocusedColor = System.Drawing.Color.Empty;
+            btnAddProduct.Font = new System.Drawing.Font("Sitka Text", 12F);
+            btnAddProduct.ForeColor = System.Drawing.Color.White;
+            btnAddProduct.Image = null;
+            btnAddProduct.ImageSize = new System.Drawing.Size(20, 20);
+            btnAddProduct.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            btnAddProduct.Location = new System.Drawing.Point(315, 393);
+            btnAddProduct.Name = "btnAddProduct";
+            btnAddProduct.OnHoverBaseColor = System.Drawing.Color.Gray;
+            btnAddProduct.OnHoverBorderColor = System.Drawing.Color.Black;
+            btnAddProduct.OnHoverForeColor = System.Drawing.Color.White;
+            btnAddProduct.OnHoverImage = null;
+            btnAddProduct.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            btnAddProduct.OnPressedColor = System.Drawing.Color.Black;
+            btnAddProduct.Size = new System.Drawing.Size(107, 31);
+            btnAddProduct.TabIndex = 29;
+            btnAddProduct.Text = " Добавить";
+            btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
+            // 
             // gunaElipse1
             // 
             this.gunaElipse1.Radius = 15;
@@ -101,10 +133,12 @@
             this.BoxCategory.ForeColor = System.Drawing.Color.Black;
             this.BoxCategory.FormattingEnabled = true;
             this.BoxCategory.Items.AddRange(new object[] {
-            "Видеокарты",
-            "Процессоры",
-            "Клавиатуры",
-            "Мыши"});
+            "Комплектующие",
+            "Оргтехника",
+            "Ноутбуки",
+            "Клавиатуры, мыши",
+            "Мониторы",
+            "Мультимедия"});
             this.BoxCategory.Location = new System.Drawing.Point(68, 39);
             this.BoxCategory.Name = "BoxCategory";
             this.BoxCategory.OnHoverItemBaseColor = System.Drawing.Color.Black;
@@ -257,38 +291,6 @@
             this.btnCancel.TabIndex = 30;
             this.btnCancel.Text = "  Закрыть";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnAddProduct
-            // 
-            btnAddProduct.AnimationHoverSpeed = 0.07F;
-            btnAddProduct.AnimationSpeed = 0.03F;
-            btnAddProduct.BaseColor = System.Drawing.Color.DimGray;
-            btnAddProduct.BorderColor = System.Drawing.Color.Black;
-            btnAddProduct.CheckedBaseColor = System.Drawing.Color.Gray;
-            btnAddProduct.CheckedBorderColor = System.Drawing.Color.Black;
-            btnAddProduct.CheckedForeColor = System.Drawing.Color.White;
-            btnAddProduct.CheckedImage = null;
-            btnAddProduct.CheckedLineColor = System.Drawing.Color.DimGray;
-            btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnAddProduct.DialogResult = System.Windows.Forms.DialogResult.None;
-            btnAddProduct.FocusedColor = System.Drawing.Color.Empty;
-            btnAddProduct.Font = new System.Drawing.Font("Sitka Text", 12F);
-            btnAddProduct.ForeColor = System.Drawing.Color.White;
-            btnAddProduct.Image = null;
-            btnAddProduct.ImageSize = new System.Drawing.Size(20, 20);
-            btnAddProduct.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            btnAddProduct.Location = new System.Drawing.Point(315, 393);
-            btnAddProduct.Name = "btnAddProduct";
-            btnAddProduct.OnHoverBaseColor = System.Drawing.Color.Gray;
-            btnAddProduct.OnHoverBorderColor = System.Drawing.Color.Black;
-            btnAddProduct.OnHoverForeColor = System.Drawing.Color.White;
-            btnAddProduct.OnHoverImage = null;
-            btnAddProduct.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            btnAddProduct.OnPressedColor = System.Drawing.Color.Black;
-            btnAddProduct.Size = new System.Drawing.Size(107, 31);
-            btnAddProduct.TabIndex = 29;
-            btnAddProduct.Text = " Добавить";
-            btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // TextBoxDescription
             // 

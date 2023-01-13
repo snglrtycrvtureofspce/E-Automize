@@ -31,7 +31,7 @@ namespace EAutomize.Control
             {
                 gunaAdvenceButton1.ForeColor = Color.White;
                 gunaAdvenceButton1.BackColor = Color.Black;
-                gunaAdvenceButton1.Text = "Книга в корзине";
+                gunaAdvenceButton1.Text = "Товар в корзине";
                 gunaAdvenceButton1.ImageOffsetX = 10;
                 AddBasketProduct();
             }
@@ -59,7 +59,7 @@ namespace EAutomize.Control
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Messenge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 con.Close();
             }
         }
@@ -76,7 +76,7 @@ namespace EAutomize.Control
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Messenge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 con.Close();
             }
         }

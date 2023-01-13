@@ -40,14 +40,15 @@
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.UserPanel = new Guna.UI.WinForms.GunaPanel();
+            this.btnMonitor = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnBasket = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.btnFantasy = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnChildrens = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnBestSellers = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnNew = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnKeyboardMouse = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnLaptop = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnOfficeEquipment = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnAccessories = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.MenuPanel = new Guna.UI.WinForms.GunaPanel();
@@ -57,6 +58,7 @@
             this.UserPicture = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.TopPanel = new Guna.UI.WinForms.GunaShadowPanel();
             this.UserName = new Guna.UI.WinForms.GunaLabel();
+            this.btnMultimedia = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.AdminPanel.SuspendLayout();
@@ -210,24 +212,61 @@
             // 
             // UserPanel
             // 
+            this.UserPanel.Controls.Add(this.btnMultimedia);
+            this.UserPanel.Controls.Add(this.btnMonitor);
             this.UserPanel.Controls.Add(this.gunaPanel1);
-            this.UserPanel.Controls.Add(this.btnFantasy);
-            this.UserPanel.Controls.Add(this.btnChildrens);
-            this.UserPanel.Controls.Add(this.btnBestSellers);
-            this.UserPanel.Controls.Add(this.btnNew);
+            this.UserPanel.Controls.Add(this.btnKeyboardMouse);
+            this.UserPanel.Controls.Add(this.btnLaptop);
+            this.UserPanel.Controls.Add(this.btnOfficeEquipment);
+            this.UserPanel.Controls.Add(this.btnAccessories);
             this.UserPanel.Controls.Add(this.gunaPanel3);
             this.UserPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.UserPanel.Location = new System.Drawing.Point(0, 197);
             this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(170, 302);
+            this.UserPanel.Size = new System.Drawing.Size(170, 318);
             this.UserPanel.TabIndex = 7;
+            // 
+            // btnMonitor
+            // 
+            this.btnMonitor.AnimationHoverSpeed = 0.07F;
+            this.btnMonitor.AnimationSpeed = 0.03F;
+            this.btnMonitor.BaseColor = System.Drawing.Color.White;
+            this.btnMonitor.BorderColor = System.Drawing.Color.Black;
+            this.btnMonitor.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnMonitor.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnMonitor.CheckedForeColor = System.Drawing.Color.Black;
+            this.btnMonitor.CheckedImage = null;
+            this.btnMonitor.CheckedLineColor = System.Drawing.Color.Gray;
+            this.btnMonitor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMonitor.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMonitor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMonitor.FocusedColor = System.Drawing.Color.Empty;
+            this.btnMonitor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMonitor.ForeColor = System.Drawing.Color.Black;
+            this.btnMonitor.Image = null;
+            this.btnMonitor.ImageOffsetX = 5;
+            this.btnMonitor.ImageSize = new System.Drawing.Size(19, 19);
+            this.btnMonitor.LineColor = System.Drawing.SystemColors.Control;
+            this.btnMonitor.Location = new System.Drawing.Point(0, 164);
+            this.btnMonitor.Name = "btnMonitor";
+            this.btnMonitor.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnMonitor.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMonitor.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnMonitor.OnHoverImage = null;
+            this.btnMonitor.OnHoverLineColor = System.Drawing.SystemColors.Control;
+            this.btnMonitor.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMonitor.Size = new System.Drawing.Size(170, 35);
+            this.btnMonitor.TabIndex = 9;
+            this.btnMonitor.Text = "Мониторы";
+            this.btnMonitor.TextOffsetX = 10;
+            this.btnMonitor.Click += new System.EventHandler(this.btnMonitor_Click);
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.Controls.Add(this.btnBasket);
             this.gunaPanel1.Controls.Add(this.gunaPanel5);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 214);
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 230);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(170, 88);
             this.gunaPanel1.TabIndex = 8;
@@ -288,145 +327,145 @@
             this.gunaLabel3.TabIndex = 0;
             this.gunaLabel3.Text = "Корзина";
             // 
-            // btnFantasy
+            // btnKeyboardMouse
             // 
-            this.btnFantasy.AnimationHoverSpeed = 0.07F;
-            this.btnFantasy.AnimationSpeed = 0.03F;
-            this.btnFantasy.BaseColor = System.Drawing.Color.White;
-            this.btnFantasy.BorderColor = System.Drawing.Color.Black;
-            this.btnFantasy.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnFantasy.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnFantasy.CheckedForeColor = System.Drawing.Color.Black;
-            this.btnFantasy.CheckedImage = null;
-            this.btnFantasy.CheckedLineColor = System.Drawing.Color.Gray;
-            this.btnFantasy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFantasy.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnFantasy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFantasy.FocusedColor = System.Drawing.Color.Empty;
-            this.btnFantasy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFantasy.ForeColor = System.Drawing.Color.Black;
-            this.btnFantasy.Image = null;
-            this.btnFantasy.ImageOffsetX = 5;
-            this.btnFantasy.ImageSize = new System.Drawing.Size(19, 19);
-            this.btnFantasy.LineColor = System.Drawing.SystemColors.Control;
-            this.btnFantasy.Location = new System.Drawing.Point(0, 150);
-            this.btnFantasy.Name = "btnFantasy";
-            this.btnFantasy.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnFantasy.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnFantasy.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnFantasy.OnHoverImage = null;
-            this.btnFantasy.OnHoverLineColor = System.Drawing.SystemColors.Control;
-            this.btnFantasy.OnPressedColor = System.Drawing.Color.Black;
-            this.btnFantasy.Size = new System.Drawing.Size(170, 42);
-            this.btnFantasy.TabIndex = 7;
-            this.btnFantasy.Text = "Мыши";
-            this.btnFantasy.TextOffsetX = 10;
-            this.btnFantasy.Click += new System.EventHandler(this.btnFantasy_Click);
+            this.btnKeyboardMouse.AnimationHoverSpeed = 0.07F;
+            this.btnKeyboardMouse.AnimationSpeed = 0.03F;
+            this.btnKeyboardMouse.BaseColor = System.Drawing.Color.White;
+            this.btnKeyboardMouse.BorderColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnKeyboardMouse.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.CheckedForeColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.CheckedImage = null;
+            this.btnKeyboardMouse.CheckedLineColor = System.Drawing.Color.Gray;
+            this.btnKeyboardMouse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKeyboardMouse.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnKeyboardMouse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKeyboardMouse.FocusedColor = System.Drawing.Color.Empty;
+            this.btnKeyboardMouse.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnKeyboardMouse.ForeColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.Image = null;
+            this.btnKeyboardMouse.ImageOffsetX = 5;
+            this.btnKeyboardMouse.ImageSize = new System.Drawing.Size(19, 19);
+            this.btnKeyboardMouse.LineColor = System.Drawing.SystemColors.Control;
+            this.btnKeyboardMouse.Location = new System.Drawing.Point(0, 129);
+            this.btnKeyboardMouse.Name = "btnKeyboardMouse";
+            this.btnKeyboardMouse.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnKeyboardMouse.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.OnHoverImage = null;
+            this.btnKeyboardMouse.OnHoverLineColor = System.Drawing.SystemColors.Control;
+            this.btnKeyboardMouse.OnPressedColor = System.Drawing.Color.Black;
+            this.btnKeyboardMouse.Size = new System.Drawing.Size(170, 35);
+            this.btnKeyboardMouse.TabIndex = 7;
+            this.btnKeyboardMouse.Text = "Клавиатуры, мыши";
+            this.btnKeyboardMouse.TextOffsetX = 10;
+            this.btnKeyboardMouse.Click += new System.EventHandler(this.btnKeyboardMouse_Click);
             // 
-            // btnChildrens
+            // btnLaptop
             // 
-            this.btnChildrens.AnimationHoverSpeed = 0.07F;
-            this.btnChildrens.AnimationSpeed = 0.03F;
-            this.btnChildrens.BaseColor = System.Drawing.Color.White;
-            this.btnChildrens.BorderColor = System.Drawing.Color.Black;
-            this.btnChildrens.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnChildrens.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnChildrens.CheckedForeColor = System.Drawing.Color.Black;
-            this.btnChildrens.CheckedImage = null;
-            this.btnChildrens.CheckedLineColor = System.Drawing.Color.Gray;
-            this.btnChildrens.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChildrens.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnChildrens.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnChildrens.FocusedColor = System.Drawing.Color.Empty;
-            this.btnChildrens.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChildrens.ForeColor = System.Drawing.Color.Black;
-            this.btnChildrens.Image = null;
-            this.btnChildrens.ImageOffsetX = 5;
-            this.btnChildrens.ImageSize = new System.Drawing.Size(19, 19);
-            this.btnChildrens.LineColor = System.Drawing.SystemColors.Control;
-            this.btnChildrens.Location = new System.Drawing.Point(0, 108);
-            this.btnChildrens.Name = "btnChildrens";
-            this.btnChildrens.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnChildrens.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnChildrens.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnChildrens.OnHoverImage = null;
-            this.btnChildrens.OnHoverLineColor = System.Drawing.SystemColors.Control;
-            this.btnChildrens.OnPressedColor = System.Drawing.Color.Black;
-            this.btnChildrens.Size = new System.Drawing.Size(170, 42);
-            this.btnChildrens.TabIndex = 6;
-            this.btnChildrens.Text = "Клавиатура";
-            this.btnChildrens.TextOffsetX = 10;
-            this.btnChildrens.Click += new System.EventHandler(this.btnChildrens_Click);
+            this.btnLaptop.AnimationHoverSpeed = 0.07F;
+            this.btnLaptop.AnimationSpeed = 0.03F;
+            this.btnLaptop.BaseColor = System.Drawing.Color.White;
+            this.btnLaptop.BorderColor = System.Drawing.Color.Black;
+            this.btnLaptop.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnLaptop.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnLaptop.CheckedForeColor = System.Drawing.Color.Black;
+            this.btnLaptop.CheckedImage = null;
+            this.btnLaptop.CheckedLineColor = System.Drawing.Color.Gray;
+            this.btnLaptop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLaptop.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLaptop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLaptop.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLaptop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLaptop.ForeColor = System.Drawing.Color.Black;
+            this.btnLaptop.Image = null;
+            this.btnLaptop.ImageOffsetX = 5;
+            this.btnLaptop.ImageSize = new System.Drawing.Size(19, 19);
+            this.btnLaptop.LineColor = System.Drawing.SystemColors.Control;
+            this.btnLaptop.Location = new System.Drawing.Point(0, 94);
+            this.btnLaptop.Name = "btnLaptop";
+            this.btnLaptop.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnLaptop.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLaptop.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnLaptop.OnHoverImage = null;
+            this.btnLaptop.OnHoverLineColor = System.Drawing.SystemColors.Control;
+            this.btnLaptop.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLaptop.Size = new System.Drawing.Size(170, 35);
+            this.btnLaptop.TabIndex = 6;
+            this.btnLaptop.Text = "Ноутбуки";
+            this.btnLaptop.TextOffsetX = 10;
+            this.btnLaptop.Click += new System.EventHandler(this.btnLaptop_Click);
             // 
-            // btnBestSellers
+            // btnOfficeEquipment
             // 
-            this.btnBestSellers.AnimationHoverSpeed = 0.07F;
-            this.btnBestSellers.AnimationSpeed = 0.03F;
-            this.btnBestSellers.BaseColor = System.Drawing.Color.White;
-            this.btnBestSellers.BorderColor = System.Drawing.Color.Black;
-            this.btnBestSellers.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnBestSellers.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnBestSellers.CheckedForeColor = System.Drawing.Color.Black;
-            this.btnBestSellers.CheckedImage = null;
-            this.btnBestSellers.CheckedLineColor = System.Drawing.Color.Gray;
-            this.btnBestSellers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBestSellers.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBestSellers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBestSellers.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBestSellers.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBestSellers.ForeColor = System.Drawing.Color.Black;
-            this.btnBestSellers.Image = null;
-            this.btnBestSellers.ImageOffsetX = 5;
-            this.btnBestSellers.ImageSize = new System.Drawing.Size(19, 19);
-            this.btnBestSellers.LineColor = System.Drawing.SystemColors.Control;
-            this.btnBestSellers.Location = new System.Drawing.Point(0, 66);
-            this.btnBestSellers.Name = "btnBestSellers";
-            this.btnBestSellers.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnBestSellers.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBestSellers.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnBestSellers.OnHoverImage = null;
-            this.btnBestSellers.OnHoverLineColor = System.Drawing.SystemColors.Control;
-            this.btnBestSellers.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBestSellers.Size = new System.Drawing.Size(170, 42);
-            this.btnBestSellers.TabIndex = 3;
-            this.btnBestSellers.Text = "Процессоры";
-            this.btnBestSellers.TextOffsetX = 10;
-            this.btnBestSellers.Click += new System.EventHandler(this.btnBestSellers_Click);
+            this.btnOfficeEquipment.AnimationHoverSpeed = 0.07F;
+            this.btnOfficeEquipment.AnimationSpeed = 0.03F;
+            this.btnOfficeEquipment.BaseColor = System.Drawing.Color.White;
+            this.btnOfficeEquipment.BorderColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnOfficeEquipment.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.CheckedForeColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.CheckedImage = null;
+            this.btnOfficeEquipment.CheckedLineColor = System.Drawing.Color.Gray;
+            this.btnOfficeEquipment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOfficeEquipment.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnOfficeEquipment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOfficeEquipment.FocusedColor = System.Drawing.Color.Empty;
+            this.btnOfficeEquipment.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOfficeEquipment.ForeColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.Image = null;
+            this.btnOfficeEquipment.ImageOffsetX = 5;
+            this.btnOfficeEquipment.ImageSize = new System.Drawing.Size(19, 19);
+            this.btnOfficeEquipment.LineColor = System.Drawing.SystemColors.Control;
+            this.btnOfficeEquipment.Location = new System.Drawing.Point(0, 59);
+            this.btnOfficeEquipment.Name = "btnOfficeEquipment";
+            this.btnOfficeEquipment.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnOfficeEquipment.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.OnHoverImage = null;
+            this.btnOfficeEquipment.OnHoverLineColor = System.Drawing.SystemColors.Control;
+            this.btnOfficeEquipment.OnPressedColor = System.Drawing.Color.Black;
+            this.btnOfficeEquipment.Size = new System.Drawing.Size(170, 35);
+            this.btnOfficeEquipment.TabIndex = 3;
+            this.btnOfficeEquipment.Text = "Оргтехника";
+            this.btnOfficeEquipment.TextOffsetX = 10;
+            this.btnOfficeEquipment.Click += new System.EventHandler(this.btnOfficeEquipment_Click);
             // 
-            // btnNew
+            // btnAccessories
             // 
-            this.btnNew.AnimationHoverSpeed = 0.07F;
-            this.btnNew.AnimationSpeed = 0.03F;
-            this.btnNew.BaseColor = System.Drawing.Color.White;
-            this.btnNew.BorderColor = System.Drawing.Color.Black;
-            this.btnNew.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnNew.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnNew.CheckedForeColor = System.Drawing.Color.Black;
-            this.btnNew.CheckedImage = null;
-            this.btnNew.CheckedLineColor = System.Drawing.Color.Gray;
-            this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNew.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnNew.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNew.FocusedColor = System.Drawing.Color.Empty;
-            this.btnNew.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnNew.ForeColor = System.Drawing.Color.Black;
-            this.btnNew.Image = null;
-            this.btnNew.ImageOffsetX = 5;
-            this.btnNew.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnNew.LineColor = System.Drawing.SystemColors.Control;
-            this.btnNew.Location = new System.Drawing.Point(0, 24);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnNew.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnNew.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnNew.OnHoverImage = null;
-            this.btnNew.OnHoverLineColor = System.Drawing.SystemColors.Control;
-            this.btnNew.OnPressedColor = System.Drawing.Color.Black;
-            this.btnNew.Size = new System.Drawing.Size(170, 42);
-            this.btnNew.TabIndex = 2;
-            this.btnNew.Text = "Видеокарты";
-            this.btnNew.TextOffsetX = 10;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            this.btnAccessories.AnimationHoverSpeed = 0.07F;
+            this.btnAccessories.AnimationSpeed = 0.03F;
+            this.btnAccessories.BaseColor = System.Drawing.Color.White;
+            this.btnAccessories.BorderColor = System.Drawing.Color.Black;
+            this.btnAccessories.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnAccessories.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnAccessories.CheckedForeColor = System.Drawing.Color.Black;
+            this.btnAccessories.CheckedImage = null;
+            this.btnAccessories.CheckedLineColor = System.Drawing.Color.Gray;
+            this.btnAccessories.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAccessories.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAccessories.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccessories.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAccessories.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAccessories.ForeColor = System.Drawing.Color.Black;
+            this.btnAccessories.Image = null;
+            this.btnAccessories.ImageOffsetX = 5;
+            this.btnAccessories.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnAccessories.LineColor = System.Drawing.SystemColors.Control;
+            this.btnAccessories.Location = new System.Drawing.Point(0, 24);
+            this.btnAccessories.Name = "btnAccessories";
+            this.btnAccessories.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnAccessories.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAccessories.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnAccessories.OnHoverImage = null;
+            this.btnAccessories.OnHoverLineColor = System.Drawing.SystemColors.Control;
+            this.btnAccessories.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAccessories.Size = new System.Drawing.Size(170, 35);
+            this.btnAccessories.TabIndex = 2;
+            this.btnAccessories.Text = "Комплектующие";
+            this.btnAccessories.TextOffsetX = 10;
+            this.btnAccessories.Click += new System.EventHandler(this.btnAccessories_Click);
             // 
             // gunaPanel3
             // 
@@ -445,9 +484,9 @@
             this.gunaLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gunaLabel1.Location = new System.Drawing.Point(12, 5);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(47, 13);
+            this.gunaLabel1.Size = new System.Drawing.Size(48, 13);
             this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "Товары";
+            this.gunaLabel1.Text = "Каталог";
             // 
             // MenuPanel
             // 
@@ -551,6 +590,41 @@
             this.UserName.UseMnemonic = false;
             this.UserName.Visible = false;
             // 
+            // btnMultimedia
+            // 
+            this.btnMultimedia.AnimationHoverSpeed = 0.07F;
+            this.btnMultimedia.AnimationSpeed = 0.03F;
+            this.btnMultimedia.BaseColor = System.Drawing.Color.White;
+            this.btnMultimedia.BorderColor = System.Drawing.Color.Black;
+            this.btnMultimedia.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnMultimedia.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnMultimedia.CheckedForeColor = System.Drawing.Color.Black;
+            this.btnMultimedia.CheckedImage = null;
+            this.btnMultimedia.CheckedLineColor = System.Drawing.Color.Gray;
+            this.btnMultimedia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMultimedia.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMultimedia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMultimedia.FocusedColor = System.Drawing.Color.Empty;
+            this.btnMultimedia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMultimedia.ForeColor = System.Drawing.Color.Black;
+            this.btnMultimedia.Image = null;
+            this.btnMultimedia.ImageOffsetX = 5;
+            this.btnMultimedia.ImageSize = new System.Drawing.Size(19, 19);
+            this.btnMultimedia.LineColor = System.Drawing.SystemColors.Control;
+            this.btnMultimedia.Location = new System.Drawing.Point(0, 199);
+            this.btnMultimedia.Name = "btnMultimedia";
+            this.btnMultimedia.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnMultimedia.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMultimedia.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnMultimedia.OnHoverImage = null;
+            this.btnMultimedia.OnHoverLineColor = System.Drawing.SystemColors.Control;
+            this.btnMultimedia.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMultimedia.Size = new System.Drawing.Size(170, 35);
+            this.btnMultimedia.TabIndex = 10;
+            this.btnMultimedia.Text = "Мультимедия";
+            this.btnMultimedia.TextOffsetX = 10;
+            this.btnMultimedia.Click += new System.EventHandler(this.btnMultimedia_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -594,10 +668,9 @@
         private Guna.UI.WinForms.GunaPanel MenuPanel;
         private Guna.UI.WinForms.GunaPanel UserPanel;
         private Guna.UI.WinForms.GunaAdvenceButton btnBasket;
-        private Guna.UI.WinForms.GunaAdvenceButton btnFantasy;
-        private Guna.UI.WinForms.GunaAdvenceButton btnChildrens;
-        private Guna.UI.WinForms.GunaAdvenceButton btnBestSellers;
-        private Guna.UI.WinForms.GunaAdvenceButton btnNew;
+        private Guna.UI.WinForms.GunaAdvenceButton btnLaptop;
+        private Guna.UI.WinForms.GunaAdvenceButton btnOfficeEquipment;
+        private Guna.UI.WinForms.GunaAdvenceButton btnAccessories;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
@@ -613,5 +686,8 @@
         private Guna.UI.WinForms.GunaLabel UserName;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton btnKeyboardMouse;
+        private Guna.UI.WinForms.GunaAdvenceButton btnMonitor;
+        private Guna.UI.WinForms.GunaAdvenceButton btnMultimedia;
     }
 }

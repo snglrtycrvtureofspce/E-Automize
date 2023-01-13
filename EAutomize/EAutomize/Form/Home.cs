@@ -217,7 +217,7 @@ namespace EAutomize.Form
             con.Close();
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
+        private void btnAccessories_Click(object sender, EventArgs e)
         {
             _obj = this;
 
@@ -228,10 +228,10 @@ namespace EAutomize.Form
             productControl.Dock = DockStyle.Fill;
             productControl.BringToFront();
 
-            PrintProduct(productControl, "Видеокарты");
+            PrintProduct(productControl, "Комплектующие");
         }
 
-        private void btnBestSellers_Click(object sender, EventArgs e)
+        private void btnOfficeEquipment_Click(object sender, EventArgs e)
         {
             _obj = this;
 
@@ -242,10 +242,10 @@ namespace EAutomize.Form
             productControl.Dock = DockStyle.Fill;
             productControl.BringToFront();
 
-            PrintProduct(productControl, "Процессоры");
+            PrintProduct(productControl, "Оргтехника");
         }
 
-        private void btnChildrens_Click(object sender, EventArgs e)
+        private void btnLaptop_Click(object sender, EventArgs e)
         {
             _obj = this;
 
@@ -256,10 +256,10 @@ namespace EAutomize.Form
             productControl.Dock = DockStyle.Fill;
             productControl.BringToFront();
 
-            PrintProduct(productControl, "Клавиатура");
+            PrintProduct(productControl, "Ноутбуки");
         }
 
-        private void btnFantasy_Click(object sender, EventArgs e)
+        private void btnKeyboardMouse_Click(object sender, EventArgs e)
         {
             _obj = this;
 
@@ -270,7 +270,35 @@ namespace EAutomize.Form
             productControl.Dock = DockStyle.Fill;
             productControl.BringToFront();
 
-            PrintProduct(productControl, "Мыши");
+            PrintProduct(productControl, "Клавиатуры, мыши");
+        }
+
+        private void btnMonitor_Click(object sender, EventArgs e)
+        {
+            _obj = this;
+
+            if (InfoPanel.Controls.Count > 0)
+                InfoPanel.Controls.RemoveAt(0);
+            ProductControl productControl = new ProductControl();
+            InfoPanel.Controls.Add(productControl);
+            productControl.Dock = DockStyle.Fill;
+            productControl.BringToFront();
+
+            PrintProduct(productControl, "Мониторы");
+        }
+
+        private void btnMultimedia_Click(object sender, EventArgs e)
+        {
+            _obj = this;
+
+            if (InfoPanel.Controls.Count > 0)
+                InfoPanel.Controls.RemoveAt(0);
+            ProductControl productControl = new ProductControl();
+            InfoPanel.Controls.Add(productControl);
+            productControl.Dock = DockStyle.Fill;
+            productControl.BringToFront();
+
+            PrintProduct(productControl, "Мультимедия");
         }
 
         //------------------------------------------ Корзина
@@ -286,11 +314,11 @@ namespace EAutomize.Form
             basketControl.Dock = DockStyle.Fill;
             basketControl.BringToFront();
 
-            PrintBasketBook(basketControl);
-            CountBasketBook(basketControl);
+            PrintBasket(basketControl);
+            CountBasket(basketControl);
         }
 
-        private void CountBasketBook(BasketControl basketControl)
+        private void CountBasket(BasketControl basketControl)
         {
             SQLiteCommand cmd = new SQLiteCommand("SELECT COUNT(*) FROM basket", con);
             con.Open();
@@ -298,7 +326,7 @@ namespace EAutomize.Form
             con.Close();
         }
 
-        private void PrintBasketBook(BasketControl basketControl)
+        private void PrintBasket(BasketControl basketControl)
         {
             SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM basket", con);
             con.Open();

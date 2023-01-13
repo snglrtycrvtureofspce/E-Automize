@@ -29,5 +29,13 @@ namespace EAutomize.Control
                 con.Close();
             }
         }
+
+        private void BasketControl_Load(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            var a = rnd.Next(500, 5000);
+            gunaLabel6.Text = a.ToString() + " руб.";
+            gunaLabel7.Text = a.ToString() + " руб.";
+        }
     }
 }
